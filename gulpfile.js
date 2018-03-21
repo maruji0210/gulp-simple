@@ -24,17 +24,13 @@ gulp.task('copyassets', function () {
         .pipe(gulp.dest('dist/'));
 });
 
-//watch
-gulp.task("watch", function () {
-    var targets = [
-        './src/ejs/**/*.ejs',
-        './src/assets/**/*',
-    ];
-    gulp.watch(targets, ['build']);
-});
-
 //build
 gulp.task("build", ["ejs", "copyassets"]);
+
+//watch
+gulp.task("watch", function () {
+    gulp.watch(['src/**/*',], ['build']);
+});
 
 //clean
 gulp.task("clean", function () {
