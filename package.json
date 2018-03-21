@@ -1,0 +1,10 @@
+{
+  "name": "gulp-simple",
+  "version": "0.0.1",
+  "description": "gulp-simple",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^3.1.2"
+  }
+}

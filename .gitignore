@@ -1,0 +1,6 @@
+# node.js
+node_modules/
+
+# other
+.envrc
+*.DS_Store
