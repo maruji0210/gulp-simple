@@ -4,3 +4,6 @@ node_modules/
 # other
 .envrc
 *.DS_Store
+
+# output
+dist/
