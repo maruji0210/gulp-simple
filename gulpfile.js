@@ -6,11 +6,13 @@ var autoprefixer = require('gulp-autoprefixer');
 var webserver = require('gulp-webserver');
 var cssmin = require('gulp-cssmin');
 var uglify = require('gulp-uglify');
+var plumber = require('gulp-plumber');
 var del = require('del');
 
 //ejs
 gulp.task('ejs', function () {
     return gulp.src(['src/ejs/**/*.ejs', '!src/ejs/**/_*.ejs'])
+        .pipe(plumber())
         .pipe(ejs())
         .pipe(rename({
             extname: '.html'
